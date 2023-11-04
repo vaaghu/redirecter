@@ -114,11 +114,6 @@ const page = (req,res,next)=>{
       <button id="openYouTubeButton" onClick="openYouTube()">${req.buttonTitle}</button>
     </div>
     <script>
-    setTimeout(()=>{
-      var button = document.getElementById('openYouTubeButton');
-      button.click();
-    },100)
-
     function openYouTube() {
       window.open(${req.baseURL});
     }

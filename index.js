@@ -13,4 +13,6 @@ app.get("/linkedin",checkAndroid,linkedin, page);
 
 app.listen(PORT,()=>{
   console.log("http://localhost:"+PORT)
+  console.log("http://ec2-52-66-235-34.ap-south-1.compute.amazonaws.com:"+PORT)
+  console.log("https://redirecter.vaaghu.repl.co")
 })
