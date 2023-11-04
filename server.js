@@ -1,6 +1,6 @@
 const express = require("express")
 const app = express()
-const PORT = 2999
+const PORT = 443
 
 const {youtube,linkedin} = require("./controllers/main.js")
 const {checkAndroid, page} = require("./controllers/others.js")
