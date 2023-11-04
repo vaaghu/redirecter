@@ -13,10 +13,12 @@ jobs:
     runs-on: redirectRunner
     
     steps:
-    
-    - name: Checkout
-      uses: actions/checkout@v3
-      
-    - name: install packages
-      run:
-        npm ci
+      - name: Clone Repository
+        uses: actions/checkout@v3
+        with:
+          path: 'main'
+
+      - name: Install Packages & Setup
+        run: |
+          cd main/
+          npm ci
