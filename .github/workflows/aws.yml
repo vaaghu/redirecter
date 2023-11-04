@@ -10,7 +10,7 @@ permissions:
 jobs:
   deploy:
     name: Deploy
-    runs-on: redirectRunner
+    runs-on: self-hosted
     
     steps:
       - name: Clone Repository
