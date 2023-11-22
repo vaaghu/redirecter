@@ -31,39 +31,43 @@ const page = (req,res,next)=>{
         padding: 0px;
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: flex-start;
         align-items: center;
         background-color: black;
-        overflow: hidden;
+        /* overflow: hidden; */
       }
       #card{
-        max-width: 500px;
-        max-height: 800px;
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
         align-items: center;
-        height: 80dvh;
-        width: 75dvw;
+        flex-wrap: wrap;
         background-color: transparent;
-        /* background-color: red; */
         border-radius: 15px;
         /* box-shadow: 11px 11px 20px rgba(255, 255, 255, 0.24); */
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        /* max-height: 100dvh; */
+        margin: 10px 2px;
       }
       #openYouTubeButton{
-        width: 70%;
+        /* width: 70%; */
         padding: 15px 5px;
-        font-size: 3em;
+        font-size: 1.2rem;
         color: rgb(255, 197, 197);
         background-color:#be0000;
         border: none;
         border-radius: 15px;
       } 
       #logo{
+        margin: 20px 5px;
         background: #ffdada;
         border-radius: 50%;
-        width: 300px;
-        height: 300px;
+        width: 8rem;
+        height: 8rem;
+        /* width: 300px;
+        height: 300px; */
       }
     </style>
   </head>
